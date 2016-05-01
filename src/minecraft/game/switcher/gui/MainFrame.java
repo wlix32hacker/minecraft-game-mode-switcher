@@ -29,12 +29,24 @@ import org.jnbt.Tag;
 public class MainFrame extends javax.swing.JFrame {
     private Map<String, Object> treeItens;
     private CompoundTag tree;
+    private final FileSelector fileSelector;
 
     /**
      * Creates new form MainFrame
      */
     public MainFrame() {
         initComponents();
+        
+        // setup file chooser
+        fileSelector = new FileSelector(new ActionListener() {
+                                        @Override
+                                        public void actionPerformed(ActionEvent e) {
+                                            System.out.println("selected file");
+                                            JFileChooser f = (JFileChooser) e.getSource();
+                                            datFilePath.setText(f.getSelectedFile().getAbsolutePath());
+                                            loadNbtProperties();
+                                        }
+                                    });
     }
 
     /**
@@ -154,15 +166,6 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void btnChooseFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChooseFileActionPerformed
         System.out.println("Abrindo file chooser");
-        FileSelector fileSelector = new FileSelector(new ActionListener() {
-                                        @Override
-                                        public void actionPerformed(ActionEvent e) {
-                                            System.out.println("selected file");
-                                            JFileChooser f = (JFileChooser) e.getSource();
-                                            datFilePath.setText(f.getSelectedFile().getAbsolutePath());
-                                            loadNbtProperties();
-                                        }
-                                    });
         fileSelector.fs.showOpenDialog(this);
     }//GEN-LAST:event_btnChooseFileActionPerformed
 

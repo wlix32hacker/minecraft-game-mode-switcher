@@ -82,7 +82,7 @@ public class FileSelector extends javax.swing.JPanel {
         // TODO add your handling code here:
         if(!"CancelSelection".equals(evt.getActionCommand())){
             this.actionListener.actionPerformed(evt);
-            return ;
+            fs.setCurrentDirectory(fs.getSelectedFile());
         }else{
             System.out.println("selection canceled");
         }
