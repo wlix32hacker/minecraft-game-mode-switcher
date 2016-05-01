@@ -80,7 +80,13 @@ public class FileSelector extends javax.swing.JPanel {
 
     private void fileSelectorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileSelectorActionPerformed
         // TODO add your handling code here:
-        this.actionListener.actionPerformed(evt);
+        if(!"CancelSelection".equals(evt.getActionCommand())){
+            this.actionListener.actionPerformed(evt);
+            return ;
+        }else{
+            System.out.println("selection canceled");
+        }
+
     }//GEN-LAST:event_fileSelectorActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
