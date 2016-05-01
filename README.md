@@ -4,7 +4,7 @@ This app is focused on visual edit for player attributes
 # Using
 * Download last release [click here](https://github.com/wlix32hacker/minecraft-game-mode-switcher/releases/download/0.0.1/minecraft-game-switcher.jar)
 * Double click on it on windows to open or `java -jar minecraft-game-switcher.jar`
-* Find your world folder and choose the `level.dat` as the picture below (**save and quite to the title first**)
+* Find your world folder and choose the `level.dat` as the picture below,  (** BEFORE on the game, save and quite to the title **)
     ![](https://i.imgur.com/h2EbxmT.png)
 * Choose wanted your mode 
 * load the game again
