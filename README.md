@@ -8,6 +8,7 @@ This app is focused on visual edit for player attributes
 
     ![](https://i.imgur.com/h2EbxmT.png)
 * Choose your wanted mode 
+* click on save
 * load the game again
 * enjoy !!!
 
