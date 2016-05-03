@@ -10,7 +10,28 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'groovy'
 
+targetCompatibility = 1.7
 sourceCompatibility = 1.7
+
+sourceSets {
+	main {
+		java {
+			srcDirs = []
+		}
+		groovy {
+			srcDirs = ['src/main/java', 'src/main/groovy']
+		}
+	}
+
+	test {
+		java {
+			srcDirs = []
+		}
+		groovy {
+			srcDirs = ['src/test/java', 'src/test/groovy']
+		}
+	}
+}
 
 repositories {
 	mavenCentral()
