@@ -43,8 +43,9 @@ dependencies {
 	compile files("${projectDir}/src/main/libs/tinyserver-1.0.jar") // local jars
 }
 
-task binary(type: Jar) {
-	baseName = project.name + '-bin'
+jar {
+	manifest {
+		attributes 'Main-Class': 'minecraft.game.Main'
+	}
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-	with jar
 }
