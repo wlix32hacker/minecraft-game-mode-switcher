@@ -17,7 +17,7 @@ public class TestRest {
 		// setup a GET route
 		getServer().get("/weather/[location]", { req ->
 			req.write([
-					message: "Hi! there from " + req.param("location")
+					message: "Hi! there from ${req.param('location')}"
 			]);
 		});
 
