@@ -39,7 +39,7 @@ repositories {
 
 dependencies {
 	testCompile group: 'junit', name: 'junit', version: '4.11'
-	compile 'org.codehaus.groovy:groovy-all:2.4.4'
+	compile 'org.codehaus.groovy:groovy-all:2.4.4' // if I need to use groovy librarires
 	compile fileTree("${projectDir}/src/main/libs/")
 }
 
