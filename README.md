@@ -1,3 +1,5 @@
+# The version 2 is not ready to version
+
 # set up
 ## installing
 
@@ -6,6 +8,7 @@
 ## generating jar
 
 	gradle binary # not work yet
+
 
 
 
