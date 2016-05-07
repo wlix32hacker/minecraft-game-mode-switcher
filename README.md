@@ -1,4 +1,4 @@
-# The version 2 is not ready to version
+# The version 2 is not ready to production
 
 # set up
 ## installing
